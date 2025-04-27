@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Taste Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Taste Grid</a>
+            <!-- Minimal nav for checkout page -->
+            <div class="nav-links">
+                <a href="index.html#menu">Menu</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-container">
+        <h1>Checkout</h1>
+        <div class="checkout-form-container">
+            <form id="checkout-form">
+                <section class="address-section">
+                    <h2><i class="fas fa-map-marker-alt"></i> Delivery Address</h2>
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">ZIP Code</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </section>
+
+                <section class="payment-section">
+                    <h2><i class="fas fa-credit-card"></i> Payment Details</h2>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <label for="expiry-date">Expiry Date</label>
+                            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-name">Name on Card</label>
+                        <input type="text" id="card-name" name="card-name" required>
+                    </div>
+                </section>
+
+                <button type="submit" class="btn place-order-btn">Place Order</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Taste Grid. All rights reserved.</p>
+        <div class="author-section">This website was created by <span class="author-name">Malaika Maheen</span>.</div>
+    </footer>
+
+    <!-- Container for notifications -->
+    <div id="notification-container"></div>
+
+    <!-- Link to main script file -->
+    <!-- Link to main script file -->
+    <script src="script.js" defer></script>
+    <!-- Checkout form logic is now handled in script.js -->
+</body>
+</html>
